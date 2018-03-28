@@ -28,6 +28,8 @@ echo "CACHE_DIR is $CACHE_DIR"
 echo "ENV_DIR is $ENV_DIR"
 echo "BP_DIR is $BP_DIR"
 
+echo "TODOAPP_HOST_API is $TODOAPP_HOST_API"
+
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/heroku/heroku-buildpack-multi
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
