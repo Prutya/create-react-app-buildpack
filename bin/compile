@@ -23,6 +23,11 @@ CACHE_DIR=$2
 ENV_DIR=$3
 BP_DIR=`cd $(dirname $0); cd ..; pwd`
 
+echo "BUILD_DIR is $BUILD_DIR"
+echo "CACHE_DIR is $CACHE_DIR"
+echo "ENV_DIR is $ENV_DIR"
+echo "BP_DIR is $BP_DIR"
+
 # Use architecture of multi-buildpack to compose behavior.
 # https://github.com/heroku/heroku-buildpack-multi
 cp $BP_DIR/.buildpacks $BUILD_DIR/.buildpacks
